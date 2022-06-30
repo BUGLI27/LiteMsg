@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LiteMsg</string>
+    <string name="index_btn_text">随 机 一 篇</string>
+    <string name="navi_read_text">已读</string>
+    <string name="navi_collect_text">收藏</string>
+    <string name="navi_comment_text">评论</string>
+    <string name="navi_search_text">溯查</string>
+    <string name="delete">删除</string>
+    <string name="search_hint">输入关键词进行搜索</string>
+    <string name="search_no_result">未搜索到任何内容</string>
+    <string name="search_exist_result">以上是匹配度最高的条目</string>
+    <string name="navi_like_text">喜欢</string>
+    <string name="no_data_text">暂无数据</string>
+</resources>

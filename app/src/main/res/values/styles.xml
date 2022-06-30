@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RippleGrey">
+        <item name="android:colorControlHighlight">#D3D3D3</item>
+        <item name="android:radius">70dp</item>
+    </style>
+
+    <style name="MainTextStyle">
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AccentTextStyle">
+        <item name="android:textColor">@color/textColorAccent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

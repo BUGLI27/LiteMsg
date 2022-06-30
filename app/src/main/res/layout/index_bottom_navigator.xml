@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageButton
+        android:id="@+id/readBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:theme="@style/RippleGrey"
+        android:scaleType="centerCrop"
+        android:src="@drawable/read"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/collectBtn"/>
+
+    <TextView
+        android:id="@+id/readText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navi_read_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/readBtn"
+        app:layout_constraintLeft_toLeftOf="@id/readBtn"
+        app:layout_constraintRight_toRightOf="@id/readBtn"/>
+
+    <ImageButton
+        android:id="@+id/collectBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:theme="@style/RippleGrey"
+        android:scaleType="centerCrop"
+        android:src="@drawable/collect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/readBtn"
+        app:layout_constraintRight_toLeftOf="@id/likeBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/collectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navi_collect_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/collectBtn"
+        app:layout_constraintStart_toStartOf="@+id/collectBtn"
+        app:layout_constraintTop_toBottomOf="@id/collectBtn" />
+
+    <ImageButton
+        android:id="@+id/likeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:theme="@style/RippleGrey"
+        android:scaleType="centerCrop"
+        android:src="@drawable/like"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/collectBtn"
+        app:layout_constraintRight_toLeftOf="@id/commentBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/likeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navi_like_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/likeBtn"
+        app:layout_constraintStart_toStartOf="@+id/likeBtn"
+        app:layout_constraintTop_toBottomOf="@id/likeBtn" />
+
+    <ImageButton
+        android:id="@+id/commentBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:theme="@style/RippleGrey"
+        android:scaleType="centerCrop"
+        android:src="@drawable/comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/likeBtn"
+        app:layout_constraintRight_toLeftOf="@id/searchBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navi_comment_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/commentBtn"
+        app:layout_constraintStart_toStartOf="@+id/commentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/commentBtn" />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:theme="@style/RippleGrey"
+        android:scaleType="centerCrop"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/commentBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/searchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navi_search_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/searchBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/searchBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
